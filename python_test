@@ -1,0 +1,31 @@
+# declare variables to be used on the program
+Num1Valid = False
+Num2Valid = False
+Num1UpperLim = 1500.0
+Num1LowerLim = 0.0
+Num2UpperLim = 1500.0
+Num2LowerLim = 0.0
+
+while Num1Valid == False:
+    Num1 = input("Type first number: ")
+    try:
+        Num1Float = float(Num1)
+        type(Num1Float) is float
+        if Num1Float > Num1LowerLim and Num1Float < Num1UpperLim:
+            Num1Valid = True
+        else:
+            print("Data out of range")
+    except ValueError:
+        print("Data is not valid. Please try again")
+
+while Num2Valid == False:
+    Num2 = input("Type first number: ")
+    try:
+        Num2Float = float(Num2)
+        type(Num1Float) is float
+        if Num2Float > Num2LowerLim and Num2Float < Num2UpperLim:
+            Num2Valid = True
+        else:
+            print("Data out of range")
+    except ValueError:
+        print("Data is not valid. Please try again")
